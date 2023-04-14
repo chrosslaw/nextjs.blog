@@ -22,7 +22,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         {/* testing Vercel's automatic deployment updates through GitHub */}
-        <p>Welcome to my blog landing page.</p>
+        <p>Welcome to my Blog.</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
