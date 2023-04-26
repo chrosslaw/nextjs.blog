@@ -17,6 +17,13 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
+        <a
+          href="chrosstech.com"
+          className={styles.homeLink}
+          alt="ChrossTech Home"
+        >
+          <Image src="./images/C.svg" height={150} width={150} />
+        </a>
         {home ? (
           <>
             <Image
