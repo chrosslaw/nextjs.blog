@@ -21,7 +21,6 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        {/* testing Vercel's automatic deployment updates through GitHub */}
         <p>Welcome to my Blog.</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>

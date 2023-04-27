@@ -3,7 +3,7 @@
   padding: 0 1rem;
   margin: 3rem auto 6rem;
 }
-
+.footer,
 .header {
   display: flex;
   flex-direction: column;
@@ -16,5 +16,17 @@
 
 .homeLink {
   display: flex;
-  align-self: flex-start;
+  background: radial-gradient(rgba(8, 11, 211, 0.527), rgba(255, 156, 25, 0.9));
+  border-radius: 100%;
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 25px;
+  color: black;
+  padding: 2rem 3;
+}
+
+.homeLink:hover {
+  background: radial-gradient(rgba(255, 156, 25, 0.9), rgba(8, 11, 211, 0.527));
 }

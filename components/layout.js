@@ -11,24 +11,17 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/C.svg" />
         <meta name="Chris Lawrence Blog" content="Technology related" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        <a
-          href="chrosstech.com"
-          className={styles.homeLink}
-          alt="ChrossTech Home"
-        >
-          <Image src="./images/C.svg" height={150} width={150} />
-        </a>
         {home ? (
           <>
             <Image
               priority
-              src="/images/profile.png"
+              src="/images/profile.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -62,6 +55,17 @@ export default function Layout({ children, home }) {
           <Link href="/">← Back to home</Link>
         </div>
       )}
+      <footer className={styles.footer}>
+        {home && (
+          <a
+            href="https://chrosstech.com"
+            className={styles.homeLink}
+            alt="ChrossTech Home"
+          >
+            <Image src="./images/C.svg" height={150} width={150} c />
+          </a>
+        )}
+      </footer>
     </div>
   );
 }
