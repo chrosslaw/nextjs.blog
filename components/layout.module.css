@@ -17,11 +17,11 @@
 .homeLink {
   display: flex;
   background: radial-gradient(rgba(8, 11, 211, 0.527), rgba(255, 156, 25, 0.9));
-  border-radius: 100%;
-  width: 75%;
+  border-radius: 50%;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-bottom: 50px;
   font-size: 25px;
   color: black;
   padding: 2rem 3;
