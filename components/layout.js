@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/react";
 
 const name = "Chris Lawrence";
 export const siteTitle = "Chris' Blog";
@@ -64,7 +65,9 @@ export default function Layout({ children, home }) {
           <Link href="/">← Back to home</Link>
         </div>
       )}
-      <footer className={styles.footer}></footer>
+      <footer className={styles.footer}>
+        <Analytics />
+      </footer>
     </div>
   );
 }
