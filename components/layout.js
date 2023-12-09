@@ -4,6 +4,7 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const name = "Chris Lawrence";
 export const siteTitle = "Chris' Blog";
@@ -67,6 +68,7 @@ export default function Layout({ children, home }) {
       )}
       <footer className={styles.footer}>
         <Analytics />
+        <SpeedInsights />
       </footer>
     </div>
   );
